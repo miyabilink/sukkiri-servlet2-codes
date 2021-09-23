@@ -14,7 +14,7 @@ jobs:
 
       - name: create a Zip file
         run: ls &&
-          zip release.zip README/* chap*/* dokotsubu/* LICENSE.txt README.md &&
+          zip -r release.zip README/* chap*/* dokotsubu/* LICENSE.txt README.md &&
           unzip -t release.zip
       - name: Create release
         id: create_release
